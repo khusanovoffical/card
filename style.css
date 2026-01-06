@@ -1,0 +1,103 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+section {
+  position: relative;
+  min-height: 100vh;
+  width: 100%;
+  background-color: #121321;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+section::before {
+  content: "";
+  position: absolute;
+  height: 240px;
+  width: 240px;
+  background: linear-gradient(90deg, #9c27b0, #f3f5f5);
+  border-radius: 50%;
+  transform: translate(-150px, -100px);
+}
+
+section::after {
+  content: "";
+  position: absolute;
+  height: 240px;
+  width: 240px;
+  background: linear-gradient(90deg, #9c27b0, #f3f5f5);
+  border-radius: 50%;
+
+  transform: translate(150px, 100px);
+}
+.container {
+  position: relative;
+  height: 225px;
+  width: 375px;
+  z-index: 100;
+}
+.container .cart {
+  height: 100%;
+  width: 100%;
+  position: relative;
+  border-radius: 25px;
+  background: rgba(225, 225, 225, 0.1);
+  box-shadow: 0 25px 45px rgba(0, 0, 0, 0.25);
+  backdrop-filter: blur(25px);
+  border: 1px solid rgba(225, 225, 225, 0.1);
+}
+
+.front-face .chip1 {
+  position: absolute;
+  top: 50px;
+  left: 15px;
+  width: 80px;
+  height: 60px;
+
+  position: absolute;
+}
+.front-face .logo1 img {
+  width: 45px;
+  height: 50px;
+  margin-top: 155px;
+  margin-left: 290px;
+}
+.container {
+  position: relative;
+  height: 225px;
+  width: 375px;
+  z-index: 100;
+}
+.container .card {
+  height: 100%;
+  width: 100%;
+  background: rgb(225, 225, 225, 0.1);
+  border-radius: 25px;
+  backdrop-filter: blur(25px);
+  box-shadow: 0 25px 45px rgb(0, 0, 0, 0.25);
+  border: 1px solid rgb(225, 225, 225, 0.1);
+}
+.card-details {
+  position: absolute;
+  bottom: 35px;
+  left: 20px;
+  right: 20px;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  font-weight: 900;
+}
+
+.card-details .name-number {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.card-details .valid-date {
+  text-align: right;
+}
+
